@@ -11,8 +11,9 @@ sudo sysctl -p
 ```
 
 
-2. Ensure rootless podman is configured
+2. (optional) Ensure rootless podman is configured
 
+If you already have rootless podman working on your machine, skip this
 ```bash
 sudo echo "$(whoami):999999:65536" >> /etc/subuid
 sudo echo "$(whoami):999999:65536" >> /etc/subgid
